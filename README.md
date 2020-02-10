@@ -12,6 +12,7 @@ List of projects:
 ***
 
 Place for an image
+![Description](photos/img.jpg)
 
 ***
 
