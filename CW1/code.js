@@ -89,3 +89,109 @@ function ageSr (ages) {
 
 ageSr (arr);
 console.log (ageSr (arr));
+
+// #9
+let arr = [34, 1, 41, 22, 98];
+
+function perSumm (pers) {
+  let summ = 0;
+  for (let i=0; i<3; i=i+1) {
+    if (arr[i]%2 !== 0) {
+    summ = summ + arr[i]**2; 
+    }
+  }
+  return (summ);
+}
+
+perSumm (arr);
+console.log (perSumm (arr));
+
+// #10
+let arr = [45, 44, 77, 22, 11];
+
+function per (pers, n) {
+  let arr1 = [];
+  for (let i=0; i<5; i=i+1) {
+    if (arr[i]%2 == 0) {
+      arr1.push(step(arr[i], n)); 
+    }
+  }
+  return (arr1);
+}
+
+function step (el, n) {
+  let elsq = el**n;
+  return elsq;
+}
+
+function step (el, n) {
+  let elsq = el**n;
+  return elsq;
+}
+console.log (per(arr, 3));
+
+// #11
+let arr = [24, 'text', 16, 45, 'e', 'PAX ROMANA'];
+
+function per (pers, n) {
+  let arr1 = [];
+  for (let i=0; i<6; i=i+1) {
+    if (typeof pers[i] == 'number') {
+      arr1.push(step(pers[i], n)); 
+    }
+  }
+  return (arr1);
+}
+
+function step (el, n) {
+  let elsq = el**2;
+  return (elsq);
+}
+
+function foo () {
+  console.log (per(arr, 2));
+}
+
+foo ();
+
+
+// #12
+let names = [];
+let ages = [];
+
+for (;;) {
+  
+  let name = prompt ("Enter your name:");
+  let age = prompt ("Enter your age:");
+  
+  names.push (name);
+  ages.push (age);
+  
+  if (window.confirm("That's all?")) {
+    break;
+  }
+  
+}
+
+function ageSr (ages) {
+  let summ = 0;
+  for (let i=0; i < ages.length; i=i+1) {
+    summ = summ + parseInt(ages[i]); 
+  }
+  return (summ/ages.length);
+}
+
+function findThemAll(names, ages) {
+  let avrg = ageSr(ages);
+  let avrgNames = [];
+  for (let i = 0; i < ages.length; i++) {
+    if (ages[i] > avrg) {
+      avrgNames.push(names[i]);
+    }
+  }
+  return avrgNames;
+}
+
+
+console.log(findThemAll(names, ages));
+
