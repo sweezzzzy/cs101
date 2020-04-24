@@ -4,5 +4,5 @@ abstract
 pattern
 ![B] (Pictures/pattern.PNG)
 
-notion
+motion
 ![C] (Pictures/motion.PNG)
