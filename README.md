@@ -1,8 +1,8 @@
 abstract
-![A] (Pictures/abstract.PNG)
+![A] (photos/abstract.PNG)
 
 pattern
-![B] (Pictures/pattern.PNG)
+![B] (photos/pattern.PNG)
 
 motion
-![C] (Pictures/motion.PNG)
+![C] (photos/motion.PNG)
